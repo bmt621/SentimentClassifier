@@ -19,8 +19,8 @@ model.infer(example_text)  # output: Positive
 
 #                          TRAINING
 
-path_to_csv = "path/to/csv"
-df = pd.read_csv(path_to_csv)
+path_to_csv = './pigin_clean_data.xlsx'
+df = pd.read_excel(path_to_csv)
 df = df[['words','sentiment']]
 
 new_df = apply_labels(df)
